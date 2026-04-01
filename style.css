@@ -528,6 +528,52 @@ nav ul li a:hover {
   }
 }
 
+  display: flex;
+  justify-content: space-between; /* logo left, menu right */
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+/* Logo text */
+.logo {
+  color: #a855f7; /* your purple */
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap; /* 🔥 prevents breaking into multiple lines */
+}
+
+/* Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px; /* spacing between items */
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* 🔥 MOBILE FIX */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 16px; /* smaller so it fits */
+  }
+
+  nav ul li a {
+    font-size: 12px; /* smaller menu text */
+  }
+
+  nav {
+    flex-wrap: wrap; /* allows slight adjustment instead of breaking badly */
+  }
+}
+
 
 
 
