@@ -519,6 +519,7 @@ nav ul li a:hover {
 /* Menu */
 nav ul {
   display: flex;
+    justify-content:center;
   list-style: none;
   gap: 15px; /* spacing between items */
   margin: 0;
@@ -547,7 +548,15 @@ nav ul li a {
 
   nav {
     flex-wrap: wrap; /* allows slight adjustment instead of breaking badly */
+  text-align:center;
   }
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+    nav ul li{
+        margin:8px 0;
+    }
 }
 body{
     margin:0;
@@ -556,9 +565,7 @@ body{
 }
 
     
-Bhumika
-22:29 (1 minute ago)
-to me
+
 
 nav {
   display: flex;
