@@ -470,17 +470,7 @@ nav ul li a:hover {
   background-color: #333;
 }
 
-/* For smaller screens (mobile devices), apply styles */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: row; /* Keep items horizontal even on small screens */
-    justify-content: center; /* Keep items centered */
-  }
 
-  nav ul li {
-    margin: 10px 0; /* Space between items */
-  }
-}
 
 
 
@@ -516,24 +506,7 @@ nav ul li a:hover {
   background-color: #555; /* Darker background when hovering */
 }
 
-/* For smaller screen sizes (mobile) */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: row; /* Keep items in one line (horizontal) */
-    justify-content: center; /* Center them */
-  }
 
-  nav ul li {
-    margin: 10px 0; /* Add some space between items */
-  }
-}
-
-  display: flex;
-  justify-content: space-between; /* logo left, menu right */
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-}
 
 /* Logo text */
 .logo {
