@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Certifications | Bhumika M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav>
+        <h1 class="logo">Bhumika M</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills & Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+<!-- SKILLS SECTION -->
+<section class="hidden">
+    <h2>My Skills</h2>
+    <p class="tagline">
+        A blend of technical expertise, creativity, and continuous learning.
+    </p>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Problem Solving (Beginner)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML (Structure)</li>
+                <li>CSS (Styling & Layout)</li>
+                <li>JavaScript (Basics)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Digital & Creative</h3>
+            <ul>
+                <li>Digital Marketing</li>
+                <li>Content Creation</li>
+                <li>Canva Designing</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Communication</h3>
+            <ul>
+                <li>Strong Vocabulary</li>
+                <li>Effective Communication</li>
+                <li>Adaptability</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Currently Learning</h3>
+            <ul>
+                <li>Data Structures</li>
+                <li>Advanced JavaScript</li>
+                <li>Project Development</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Certifications</h2>
+    <p class="tagline">
+        Courses and certifications I have completed to build my skills.
+    </p>
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3>Fundamentals of Digital Marketing</h3>
+            <p>Issued by: digitaldefynd</p>
+
+            <a href="certificate1.pdf" target="_blank">View Certificate</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Fundamentals of Digital Marketing</h3>
+            <p>Issued by: Google Digital Unlocked</p>
+
+            <a href="certificate2.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="project-card">
+            <h3>Intro to Graphic design with Photoshop</h3>
+            <p>Issued by: Great Learning</p>
+
+            <a href="certificate3.jpg" target="_blank">View Certificate</a>
+        </div>
+        <div class="project-card">
+            <h3>Aquiring Data</h3>
+            <p>Issued by: Nasscom IT-ITeS SSC</p>
+
+            <a href="certificate4.pdf" target="_blank">View Certificate</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Bhumika M | Portfolio</p>
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+const elements = document.querySelectorAll('.hidden');
+elements.forEach(el => observer.observe(el));
+</script>
+<a href="resume.pdf" class="floating-btn" target="_blank">
+   Download Resume
+</a>
+<div class="back-home">
+    <a href="index.html">← Back to Home</a>
+</div>  
+</body>
+</html>

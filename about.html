@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Bhumika M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">Bhumika M</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills & Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="about hidden">
+    <h2>About Me</h2>
+
+    <p>
+        I am Bhumika M, a first-year Electrical and Electronics Engineering student at 
+        Karpagam College of Engineering. I am deeply curious about how technology works 
+        and how it can be applied to solve real-world problems.
+    </p>
+
+    <p>
+        Although my core field is Electrical Engineering, I have developed a strong 
+        interest in Computer Science. I enjoy learning programming, improving my logical 
+        thinking, and understanding how systems and applications are built.
+    </p>
+
+    <p>
+        I believe in continuous learning and self-improvement. Currently, I am focusing on 
+        strengthening my fundamentals and gradually working towards building meaningful 
+        projects that reflect both my technical and creative abilities.
+    </p>
+
+</section>
+
+<section class="about hidden">
+    <h2>Education</h2>
+
+    <div class="timeline-item">
+        <h3>2024 – Present</h3>
+        <p>B.E. Electrical and Electronics Engineering</p>
+        <span>Karpagam College of Engineering</span>
+    </div>
+
+    <div class="timeline-item">
+        <h3>Schooling</h3>
+        <p>APS Academy Matric Hr. Sec. School</p>
+    </div>
+
+</section>
+
+<section class="about hidden">
+    <h2>What Drives Me</h2>
+
+    <p>
+        I am motivated by the idea of creating something meaningful through technology. 
+        Whether it is solving a small problem or understanding a complex concept, 
+        I find satisfaction in learning and growing every day.
+    </p>
+
+    <p>
+        My long-term goal is to build a strong technical foundation and contribute to 
+        impactful innovations in the field of engineering and technology.
+    </p>
+
+</section>
+
+
+
+
+
+<a href="resume.pdf" class="floating-btn" target="_blank">
+   Download Resume
+</a>
+
+
+
+
+<section>
+    <h2>My Coding Profiles</h2>
+    <p class="tagline">
+        Platforms where I practice problem-solving and improve my logical thinking.
+    </p>
+
+    <div class="link-buttons">
+        <a href="https://leetcode.com/u/bhumikamanohar/" target="_blank">LeetCode</a>
+        <a href="https://www.codechef.com/users/canny_coral_82" target="_blank">CodeChef</a>
+        <a href="https://www.geeksforgeeks.org/profile/bhumikama2etz" target="_blank">GeeksforGeeks</a>
+    <a href="https://github.com/bhumika200707" target="_blank">GitHub</a>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>© 2026 Bhumika M | Portfolio</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+const elements = document.querySelectorAll('.hidden');
+elements.forEach(el => observer.observe(el));
+</script>
+<div class="back-home">
+    <a href="index.html">← Back to Home</a>
+</div>  
+</body>
+</html>

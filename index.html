@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumika M | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1 class="logo">Bhumika M  Portfolio</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills & Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="home hidden">
+    <img src="profile.jpg" alt="Your Profile Picture" class="profile-img">
+
+    <h2>Hello, I'm Bhumika M</h2>
+    <p class="tagline">
+        First-Year Electrical & Electronics Engineering Student 
+        with a Passion for Computer Science and Problem Solving
+    </p>
+</section>
+
+<!-- ABOUT -->
+<section class="about hidden">
+    <h2>About Me</h2>
+    <p>
+        I am currently pursuing my Bachelor's degree in Electrical and Electronics Engineering 
+        at Karpagam College of Engineering. As a first-year student, I am actively exploring 
+        the field of computer science and developing my skills in programming, logical thinking, 
+        and problem-solving.
+    </p>
+
+    <p>
+        I am deeply interested in understanding how technology can be used to solve real-world 
+        problems. I enjoy learning new concepts, improving my technical knowledge, and building 
+        a strong foundation for future innovation.
+    </p>
+</section>
+
+<!-- ACADEMIC TIMELINE -->
+<section class="timeline hidden">
+    <h2>Academic Journey</h2>
+
+    <div class="timeline-item">
+        <h3>2025 – Present</h3>
+        <p>B.E. Electrical and Electronics Engineering</p>
+        <span>Karpagam College of Engineering</span>
+    </div>
+
+    <div class="timeline-item">
+        <h3>Schooling</h3>
+        <p>APS Academy Matric Hr. Sec. School,Tirupur</p>
+    </div>
+</section>
+
+<!-- SKILLS PREVIEW -->
+<section class="skills hidden">
+    <h2>Skills & Interests</h2>
+    <div class="skill-box">
+        <span>Problem Solving</span>
+        <span>C,C++ Programming </span>
+        <span>Logical Thinking</span>
+        <span>Computer Science Fundamentals</span>
+    </div>
+</section>
+
+<!-- GOALS -->
+<section class="goals hidden">
+    <h2>Career Goals</h2>
+    <p>
+        My goal is to build a strong foundation in both Electrical Engineering and Computer Science, 
+        and eventually work on impactful technologies that contribute to innovation and society. 
+        I aim to continuously learn, grow, and adapt in the ever-evolving tech landscape.
+    </p>
+</section>
+
+<!-- NAVIGATION LINKS -->
+<section class="links hidden">
+    <h2>Explore More</h2>
+    <div class="link-buttons">
+        <a href="projects.html">View Projects</a>
+        <a href="skills.html">Skills & Certifications</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Bhumika M | Portfolio</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+const elements = document.querySelectorAll('.hidden');
+elements.forEach(el => observer.observe(el));
+</script>
+<a href="resume.pdf" class="floating-btn" target="_blank">
+   Download Resume
+</a>
+</body>
+</html>
