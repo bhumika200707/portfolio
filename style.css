@@ -535,7 +535,10 @@ nav ul li a {
 /* 🔥 MOBILE FIX */
 @media (max-width: 768px) {
   .logo {
-    font-size: 16px; /* smaller so it fits */
+   color: #a855f7;
+  font-size: 24px; /* increase size */
+  font-weight: bold;
+  margin-bottom: 10px;
   }
 
   nav ul li a {
@@ -551,3 +554,23 @@ body{
     padding:0;
     overflow-x:hidden;
 }
+
+    
+Bhumika
+22:29 (1 minute ago)
+to me
+
+nav {
+  display: flex;
+  flex-direction: column; /* stack logo + menu */
+  align-items: center; /* 🔥 centers everything */
+  justify-content: center;
+  text-align: center;
+  background-color: #333;
+  padding: 15px 0;
+}
+
+
+
+
+
