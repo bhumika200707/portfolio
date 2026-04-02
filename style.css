@@ -597,6 +597,41 @@ nav {
   transform: scale(1.05);
   transition: 0.3s;
 }
+.contact-info a {
+  color: #a855f7; /* matches your theme */
+  text-decoration: none; /* removes underline */
+  font-weight: 500;
+}
+
+/* Hover effect */
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #9333ea; /* slightly darker on hover */
+}
+
+
+
+.contact-info {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
